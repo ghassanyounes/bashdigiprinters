@@ -1,4 +1,3 @@
-# Ghassan's DigiPen Printer Shell Script! Enjoy!
 #!/bin/sh
 dpusr=`zenity --width 500 --height 150 --title "Ghassan's Linux Print Script" --entry --text "Enter your DigiPen username: "`
 if [ $? = 0 ]; then
