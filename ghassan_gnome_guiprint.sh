@@ -37,14 +37,14 @@ if [ $? = 0 ]; then
       if [ $? = 0 ]; then
         smbclient //print0.digipen.edu/$printer $passwd -U $dpusr -c "print $filename"
       else
-        zenity --title "Ghassan's Linux Print Script" --info --width 300 --text "You cancelled the operation."
+        exit
       fi
     else
-      zenity --title "Ghassan's Linux Print Script" --info --width 300 --text "You cancelled the operation."
+      exit
     fi
   else
-    zenity --title "Ghassan's Linux Print Script" --info --width 300 --text "You cancelled the operation."
+    exit
   fi
 else
-  zenity --title "Ghassan's Linux Print Script" --info --width 300 --text "You cancelled the operation."
+  exit
 fi
