@@ -1,3 +1,4 @@
+echo Welcome to Ghassan's Linux DigiPen Printer Utility
 echo Enter DigiPen username:
 read dpuser
 echo Enter Printer Code and Name - e.g. 2050Edison: 
