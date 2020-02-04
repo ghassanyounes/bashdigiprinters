@@ -31,7 +31,7 @@ if [ "$ARGC" -lt "1" ]; then
     echo Enter Path to File - e.g. Documents/homework.pdf: 
     read filename
 else
-    filename=$1
+    filename="$1"
 fi
 
-echo smbclient -U $dpuser //print0.digipen.edu/$printer -c "print $filename"
+smbclient -U $dpuser //print0.digipen.edu/$printer -c "print \"$filename\""
